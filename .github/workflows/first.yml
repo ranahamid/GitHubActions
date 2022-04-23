@@ -3,15 +3,23 @@ name: first
 on: push
 
 jobs:
-    job1:
-        name: First Job
+    ubuntu:
+        name: ubuntu Job
         runs-on: ubuntu-latest
         steps:
-            - name: Step one
-            - name: Step two
-    job2:
-        name: Second Job
+        - run: date
+    windows:
+        name: windows Job
         runs-on: windows-latest
         steps:
-            - name: Step one
-            - name: Step two
+        - run: date
+     macos:
+        name: macos Job
+        runs-on: macos-latest
+        steps:
+        - run: date
+    depends:
+        needs: [ubuntu,windows,macos]
+        runs-on: windows-latest
+        steps:
+        - run: date
