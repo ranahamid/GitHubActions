@@ -34,25 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-  # This workflow contains a single job called "build"
-    ubuntu:
-        name: ubuntu Job
-        runs-on: ubuntu-latest
-        steps:
-        - run: date
-    windows:
-        name: windows Job
-        runs-on: windows-latest
-        steps:
-        - run: date
-     macos:
-        name: macos Job
-        runs-on: macos-latest
-        steps:
-        - run: date
-    depends:
-        needs: [ubuntu,windows,macos]
-        runs-on: windows-latest
-        steps:
-        - run: date
