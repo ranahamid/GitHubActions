@@ -18,8 +18,7 @@ jobs:
 
       -name: Run a multi-line script
       run: |
-
-      echo 1, HELLO Design Patterns
-      echo 2, HELLO Design Patterns
+      echo ADD HELLO Design Patterns
+      echo testsubj HELLO Design Patterns
 
       
