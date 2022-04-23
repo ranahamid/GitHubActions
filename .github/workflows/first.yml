@@ -1,0 +1,25 @@
+name: first 
+on: 
+  push:
+    branches: [main]
+  pull_request: 
+    branches: [main]
+
+workflow_dispatch:
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      -users: actions/checkout@v3
+      
+      -name: Run a one-line script
+      run: echo HELLO Design Patterns
+
+      -name: Run a multi-line script
+      run: |
+
+      echo 1, HELLO Design Patterns
+      echo 2, HELLO Design Patterns
+
+      
