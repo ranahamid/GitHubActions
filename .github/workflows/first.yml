@@ -29,10 +29,8 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Second Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: step tow
+        run:  env | sort 
  # This workflow contains a single job called "build"
   job2:
     
@@ -51,6 +49,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Second Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: "Get-ChildItem Env: | Sort-Object Name"
