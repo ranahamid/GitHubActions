@@ -18,7 +18,7 @@ jobs:
 
       -name: Run a multi-line script
       run: |
-      echo ADD HELLO Design Patterns
-      echo testsubj HELLO Design Patterns
+          echo Add other actions to build,
+          echo test, and deploy your project.
 
       
